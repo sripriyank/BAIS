@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="javascripts/scripts.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>AI consulting - DIS Project work - USF BAIS Spring 2022</title>
+</head>
+<body>
+     <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/transparent_logo.png"></a>
+            <div class="nav-links" id="navLinks">
+             <img src="images/close.png" onclick="hideMenu()">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="contactus.html">CONTACT</a></li>
+                    <li><a href="account.html">ACCOUNT</a></li>
+                </ul>
+            </div>
+            <img src="images/menu.png"  class="menu" onclick="showMenu()">
+        </nav>
+            <h1>Welcome</h1>
+     </section>
+<!--<section class="account">-->
+<div class="account-page">
+    <div class="container">
+        <div class="account-row">
+            <div class="col-2">
+                <img src="images/key.png" width="100%">
+            </div>
+            <div class="col-2">
+                <div class="form-container">
+                    <div class="form-button">
+                        <span onclick="login()">Login</span> 
+                        <span onclick="register()">Register</span> 
+                        <hr id="Indicator">
+                    </div>
+                    <form id="LoginForm">
+                        <input type="text" placeholder="Username" id="l_uname" required>
+                        <input type="password" placeholder="password" id="l_pass" required>
+                        <button type="button" class="btn" onclick="validate_login()">Login</button><br>
+                        <a href="">Forgot password</a> 
+                    </form>
+                    <form id="RegForm">
+                        <input type="text" placeholder="Full name" id="r_name" required>
+                        <input type="text" placeholder="User name" id="r_uname" required>
+                        <input type="email" placeholder="Email" id="r_email" required>
+                        <input type="password" placeholder="password" id="r_pass" required>
+                        <input type="password" placeholder="confirm password" id="r_pass_1" required>
+                        <input checked type="radio" name = "gender" value="male" class="male"><span style="width: 0px;">Male</span>
+                        <input type="radio" name = "gender" value="female" class="female"><span style="width: 0px;">Female</span>
+                        <button type="button" class="btn" onclick="validate_registration()">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>  
+<!----</section>        --->
+<!-------------------------FOOTER------------------------->
+<section class="footer">
+    <div class="icons">
+        <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png"></a>
+        <a href="https://twitter.com" target="_blank"><img src="images/twitter.png"></a>
+        <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png"></a>
+        <a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin.png"></a> 
+    </div>
+    <div class="icon-copyright">
+        <img src="images/copyright.png"><span>BullsAI 2022</span>
+    </div>
+</section>
+</body>
+</html>

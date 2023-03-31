@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="javascripts/scripts.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>AI consulting - DIS Project work - USF BAIS Spring 2022</title>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/transparent_logo.png"></a>
+            <div class="nav-links" id="navLinks">
+             <img src="images/close.png" onclick="hideMenu()">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="contactus.html">CONTACT</a></li>
+                    <li><a href="account.html">ACCOUNT</a></li>
+                </ul>
+            </div>
+            <img src="images/menu.png"  class="menu" onclick="showMenu()">
+        </nav>
+         <h1>Contact Us</h1>
+    <section class="send-mail">
+        <div class="contact-form">
+            <form ation="">
+                <input id="mname" type="text" placeholder="Enter your name" required>
+                <input id="memail" type="email" placeholder="Enter email address" required>
+                <input id="msub" type="text" placeholder="Enter subject" required><br>
+                <textarea id="mtext" rows="8" placeholder="Message" required></textarea><br><br>
+                <button type="button" class="red-btn-mail" onclick="sendMail()">Send Message</button>
+            </form>
+        </div>
+    </section><br><br><br><br>
+    <!-------------------------FOOTER------------------------->
+    <section class="footer">
+        <div class="icons">
+            <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.png"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png"></a>
+            <a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin.png"></a> 
+        </div>
+        <div class="icon-copyright">
+            <img src="images/copyright.png"><span>BullsAI 2022</span>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="javascripts/scripts.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+    <title>AI consulting - DIS Project work - USF BAIS Spring 2022</title>
+</head>
+<body class="charts">
+     <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/transparent_logo.png"></a>
+            <div class="nav-links" id="navLinks">
+             <img src="images/close.png" onclick="hideMenu()">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="contactus.html">CONTACT</a></li>
+                    <li><a href="account.html">ACCOUNT</a></li>
+                </ul>
+            </div>
+            <img src="images/menu.png"  class="menu" onclick="showMenu()">
+        </nav>
+        <h1>Our Services</h1>
+     </section>
+<!-----------------------SERVICES---------------------->
+<section class="services">
+    <p>We are skilled at using innovative Machine Learning solutions and advanced Data Analytics to help organizations deliver superior outcomes, minimize pain points, and rapidly modernize their operations.</p>
+    <div class="row">
+        <div class="services-col">
+            <img src="images/data-science.png">
+            <h3>Data Science</h3>
+            <p>Data is money. So get the most out of your data using our specialized Data Science consultancy services.</p>
+        </div>
+        <div class="services-col">
+            <img src="images/analytics.png">
+            <h3>Data Analytics</h3>
+            <p>Maximize the value gained from your data by exploring the most useful insights with the help of our Data Analytics wizards. </p>
+        </div>
+        <div class="services-col">
+            <img src="images/bi.png">
+            <h3>Business Intelligence</h3>
+            <p>Simple and easy-to-navigate BI dashboards and stories that help you take decision and gain a competitive edge.</p>
+        </div>
+    </div>
+</section>
+
+<!-- chart js included here -->
+<!--<div class="services-chart-polar">
+    <h2 class="chart-polar-heading">Our global footprint and the clients we serve:</h2>
+    <canvas id="chartPolar" width="400" height="400"></canvas>
+</div>
+
+<div class="services-chart-line">
+    <h2 class="chart-line-heading">Growth of our clients since hiring us:</h2>
+    <canvas id="chartLine" width="400" height="400"></canvas>
+</div>-->
+
+<div class="doughnut-chart">
+    <h3>Our global footprint and the number of clients we serve:</h3>
+    <canvas id="doughnut-chart"></canvas>
+</div>
+<div class="bar-chart">
+    <h3>Average growth of our top 5 clients since hiring us:</h3>
+    <canvas id="barChart"></canvas>
+</div>
+<div class="revenue-chart">
+    <h3>Our revenue over last 5 years:</h3>
+    <canvas id="revenue-chart"></canvas>
+</div>
+
+<section class="services-comment">
+<div class="comments">
+    <h3>Leave a comment</h3>
+    <form class="comment-form">
+        <input id="cname" type="text" placeholder="Enter Name" required>
+        <input id="cemail" type="email" placeholder="Enter Email" required><br> <br>
+        <textarea id="ctext" rows="5" placeholder="Your Comments" required></textarea><br><br>
+        <button type="button" class="red-btn" onclick="message_post()">POST COMMENT</button>
+    </form>
+</div>
+</section>
+<!----------------------FOOTER------------------------->
+<section class="footer">
+    <div class="icons">
+        <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png"></a>
+        <a href="https://twitter.com" target="_blank"><img src="images/twitter.png"></a>
+        <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png"></a>
+        <a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin.png"></a> 
+    </div>
+    <div class="icon-copyright">
+        <img src="images/copyright.png"><span>BullsAI 2022</span>
+    </div>
+</section>
+</body>
+</html>
