@@ -1,3 +1,3 @@
 # BAIS
 
-[(ASCII)](http://sripriyanka.myweb.usf.edu/)
+[(Bulls_AI)](http://sripriyanka.myweb.usf.edu/)
